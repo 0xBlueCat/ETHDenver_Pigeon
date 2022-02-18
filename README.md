@@ -1,1 +1,1 @@
-# ETHDenver_Pigeon_Client
+# ETHDenver_Pigeon
