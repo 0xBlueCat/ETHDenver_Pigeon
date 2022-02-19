@@ -10,11 +10,11 @@ import "./librarys/ERC721Enumerable.sol";
  */
 contract ETHDenverEnvelope is ERC721Enumerable, ReentrancyGuard, Ownable {
     uint256 private _TokenId;
-    string private constant _TokenURI = "https://github.com/0xBlueCat/imgs/blob/master/envelope.png";
+    string private constant _TokenURI = "ipfs://bafybeig3d6hqq7rbp6ixnnahfba2vwqaeundet3jj7ia5hx6szbz3u6ksm/envelope";
 
     constructor()
-        ERC721("ETHDenver-Envelope-test", "ETHDenver pigeon envelope test contract")
-        Ownable()
+    ERC721("ETHDenver-Envelope", "ETHDenver pigeon envelope contract")
+    Ownable()
     {}
 
     function claim(address[] calldata addresses) public nonReentrant onlyOwner {
@@ -25,10 +25,10 @@ contract ETHDenverEnvelope is ERC721Enumerable, ReentrancyGuard, Ownable {
     }
 
     function tokenURI(uint256 tokenId)
-        public
-        pure
-        override
-        returns (string memory)
+    public
+    pure
+    override
+    returns (string memory)
     {
         return _TokenURI;
     }
