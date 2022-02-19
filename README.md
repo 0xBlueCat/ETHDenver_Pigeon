@@ -1,1 +1,2 @@
-# ETHDenver_Pigeon
+# ETHDenver_Pigeon_Contract
+

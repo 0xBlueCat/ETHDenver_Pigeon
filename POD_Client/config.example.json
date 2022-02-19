@@ -1,0 +1,31 @@
+{
+  "PODKNN3_Hackathon": {
+    "orm": {
+      "type":"mysql",
+      "host":"127.0.0.1",
+      "port":3306,
+      "username":"root",
+      "password":"root",
+      "database":"podknn3_hackathon",
+      "synchronize":true,
+      "logging":true
+    },
+    "rpcServer":{
+      "port":8060
+    },
+    "log":{
+      "level":"info",
+      "file":"./log/podknn3_hackathon.log"
+    },
+    "polygon":{
+      "rpcUrl":"",
+      "privateKey":""
+    },
+    "pod":{
+      "tagClassContractAddress":"0xBCC70346547A825E03F98ED6d2c5dF246AE09b5C",
+      "tagContractAddress":"0x9D92B04811376bB133E155c9420c91E6A7FA9B8B",
+      "envelopClassId":"",
+      "taskClassId":""
+    }
+  }
+}
